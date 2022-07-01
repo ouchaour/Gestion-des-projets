@@ -5,12 +5,12 @@ public class Entreprise {
 	private String Adresse ;
 	private String email ;
 	private int telephone ;
-	private Personne resposable ;
+	private Responsable resposable ;
 	
 	public Entreprise() {
 		super();
 	}
-	public Entreprise(String nom, String adresse, String email, int telephone, Personne resposable) {
+	public Entreprise(String nom, String adresse, String email, int telephone, Responsable resposable) {
 		super();
 		this.nom = nom;
 		Adresse = adresse;
@@ -42,10 +42,10 @@ public class Entreprise {
 	public void setTelephone(int telephone) {
 		this.telephone = telephone;
 	}
-	public Personne getResposable() {
+	public Responsable getResposable() {
 		return resposable;
 	}
-	public void setResposable(Personne resposable) {
+	public void setResposable(Responsable resposable) {
 		this.resposable = resposable;
 	}
 }

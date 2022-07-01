@@ -1,20 +1,24 @@
 package Metier;
 
+import java.util.ArrayList;
+
 public class Laboratoire {
 	private String nom ;
 	private String email ;
 	private Professeur responsable ;
-	private Professeur memeber ;						// type de member 
+	private ArrayList<Personne> memeber = new ArrayList<>() ;						// type de member 	
 	public Laboratoire() {
 		super();
 	}
-	public Laboratoire(String nom, String email, Professeur responsable, Professeur memeber) {
+	
+	public Laboratoire(String nom, String email, Professeur responsable, ArrayList<Personne> memeber) {
 		super();
 		this.nom = nom;
 		this.email = email;
 		this.responsable = responsable;
 		this.memeber = memeber;
 	}
+
 	public String getNom() {
 		return nom;
 	}
@@ -33,10 +37,11 @@ public class Laboratoire {
 	public void setResponsable(Professeur responsable) {
 		this.responsable = responsable;
 	}
-	public Professeur getMemeber() {
+	public ArrayList<Personne> getMemeber() {
 		return memeber;
 	}
-	public void setMemeber(Professeur memeber) {
+	public void setMemeber(ArrayList<Personne> memeber) {
 		this.memeber = memeber;
 	}
+	
 }

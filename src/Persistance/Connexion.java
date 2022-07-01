@@ -6,7 +6,7 @@ import java.sql.SQLException;
 
 public class Connexion {
 	 final static String driverClassName="com.mysql.jdbc.Driver";
-	 final static String connectionUrl="jdbc:mysql://localhost:3306/test";
+	 final static String connectionUrl="jdbc:mysql://localhost:3306/projet";
 	 final static String dbUser="root";
 	 final static String dbPwd="";
 	 
@@ -18,7 +18,6 @@ public class Connexion {
 		  try {
 			conn=DriverManager.getConnection(connectionUrl,dbUser,dbPwd);
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		  return conn;
